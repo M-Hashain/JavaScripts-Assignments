@@ -1,0 +1,31 @@
+#one{
+    height: 500px;
+    width:1000px;
+    background-image:url(image\ 23.jpg);
+    background-size: cover; 
+    
+}
+
+#two{
+    height: 150px;
+    width: 300px;
+background-image:url(car_2.png);
+background-size: cover;
+position: relative;
+top: 220px;
+left: 710px;
+animation: moveCar 6s ease-in infinite ;
+
+
+}
+
+@keyframes moveCar {
+  from {
+
+    left: 710px;
+  }
+  to {
+   left: -710px
+  }
+
+}
