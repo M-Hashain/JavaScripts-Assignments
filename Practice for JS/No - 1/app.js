@@ -1,19 +1,39 @@
-let username = document.getElementById('username');
-let password = document.getElementById('password');
 
-function foo(){
 
-let user = 'hasnain'
-let pass = '12231'
+let firstnumber = document.getElementById('fnum')
+let secondnumber = document.getElementById('snum')
+let operators = document.getElementById('operator')
 
-if (pass == password.value && user == username.value){
-console.log("your acount is login succesfully");
+function enter(){
+let operator = operators.value;
+let num1 = +firstnumber.value;
+let num2 = +secondnumber.value;
+let resultofcalculator;
 
+if(operator == '+'){
+    resultofcalculator = num1 + num2
+
+}
+else if(  operator == '-'){
+  resultofcalculator = num1 - num2
+}
+else if(  operator == '*'){
+  resultofcalculator = num1 * num2
+}
+else if(  operator == '/'){
+  resultofcalculator = num1 / num2
+}
+else if(  operator == '**'){
+  resultofcalculator = num1** num2
+}
+else if(  operator == '%'){
+  resultofcalculator = num1%num2
 }
 else{
-    console.log("something went wrong");
-    
+    alert('invalid input only number or operators')
+}
+document.getElementById('resultofcalculator').textContent = `Result : ${resultofcalculator}`
 }
 
 
-}
+
